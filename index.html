@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="style.css">
+   <title>Document</title>
+ </head>
+ <body>
+
+<h1>calcola il prezzo del tuo biglietto</h1>
+
+<!-- inizio input/raccolta dati -->
+
+<label for="nome">Inserisci nome e cognome</label>
+<input id="nome" type="text" placeholder="nome e cogn.">
+
+<label for="eta">Scegli la fascia d'età a cui appartieni</label>
+<select id="eta">
+  <option>Minorenne</option>
+  <option>Maggiorenne</option>
+  <option>Over 60</option>
+</select>
+
+<label for="km">Inserisci il numero di km da percorrere</label>
+<input id="km" type="number" placeholder="Num. km" >
+
+<button id="calcola" type="button">Genera</button>
+<button id="reset">Annulla</button>
+
+<div id="dati-out" class="hidden">
+<ul>
+  <li>Nome utente: <span id="nome-out"></span></li>
+  <li>Fascia età: <span id="eta-out"></span></li>
+  <li>Chilometri: <span id="km-out"></span></li>
+  <li>Importo da versare: <span id="costo"></span>€</li>
+</ul>
+</div>
+
+<script src="script.js"></script>
+ </body>
+ </html>
